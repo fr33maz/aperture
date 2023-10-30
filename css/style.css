@@ -5,20 +5,32 @@
 }
 header {
     background-color: #181818;
+    padding: 24px 0;
 }
-header div {
-    padding: 20px 0;
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 header nav ul {
-    display:flex;
+    display: flex;
     list-style: none;
-    padding: 15px 20px;
+    align-items: center;
 }
-header div a img {
-    padding-top: 10px;
+.container {
+    max-width: 1168px;
+    margin: auto;
 }
-header nav ul li a {
-    margin: 15px 32px;
+header nav li {
+   margin-left: 32px; 
+}
+header nav li:first-of-type {
+    margin-right: 24px;
+}
+header nav li:last-of-type {
+    margin-left: 31px;
+}
+header nav li a {
     color: #FFF;
     font-family: Poppins;
     font-size: 15px;
@@ -27,23 +39,144 @@ header nav ul li a {
     line-height: 20px;
     text-decoration: none;
 }
-.flex-spc-btw {
-    display: flex;
-    justify-content: space-between;
+header nav li:first-of-type a {
+    font-size: 13px;
 }
-.container {
-    margin: auto; 
-    max-width: 1200px; 
-}
-.get-templet-btn {
+header nav li:last-of-type a {
+    border-radius: 14px;
+    background: #FFF;
     color: #000;
     font-size: 16px;
     letter-spacing: 0.4px;
-    border-radius: 14px;
-    background: #FFF;
-    padding: 11px 20px 11px;
+    padding: 11px 20px;
 }
-.first-section {
-    height: 716px;
-    background: linear-gradient(0deg, #000 0.78%, rgba(0, 0, 0, 0.00) 28.53%), url(../img/first-section-background-img.png), lightgray 50% / cover no-repeat;
+main section .container {
+    max-width: 580px;
+    text-align: center;
+    margin: inherit;
+}
+main section div h3{
+    text-align: left;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+main section div p{
+    text-align: left;
+}
+main section h3 {
+    color: #C0C0C0;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+main section h1 {
+    color: #FFF;
+    font-family: Poppins;
+    text-align: center;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 59.4px;
+}
+main section p {
+    color: #C0C0C0;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.main_banner {
+    background-image: url("../img/first-sec-background.jpg");
+    background-size: cover;
+    height: calc(100vh - 83px);
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 71px;
+}
+.japan_banner {
+    background-image: url("../img/japan-background.jpg");
+    background-size: cover;
+    min-height: 600px;
+    align-items:center;
+    display: flex;
+    justify-content: right;
+}
+.japan_banner .container {
+    max-width: 300px;
+    padding-right: 60px;
+}
+.costa-rica_banner {
+    background-image: url(../img/costa-ro-ca-background.jpg);
+    background-size: cover;
+    min-height: 600px;
+    display: flex;
+    justify-content: right;
+    align-items:center;
+
+}
+.costa-rica_banner .container {
+    max-width: 300px;
+    padding-right: 60px;
+}
+.nepal_banner {
+    background-image: url(../img/nepal-background.jpg);
+    background-size: cover;
+    min-height: 600px;
+    display: flex;
+    justify-content: right;
+    align-items:center;
+
+}
+.nepal_banner .container {
+    max-width: 300px;
+    padding-right: 60px;
+}
+.past-clients {
+    background-color:#000 ;
+}
+.past-clients div {
+    padding: 120px 0 100px;
+    margin: auto;
+}
+.past-clients div h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px;
+    margin-bottom: 15px;
+}
+.past-clients div h3 {
+    color: #C0C0C0;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 42px;
+}
+.past-clients div .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 46px;
+    max-width: 1168px;
 }
