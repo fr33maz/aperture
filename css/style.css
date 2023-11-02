@@ -3,6 +3,45 @@
     margin: 0;
     box-sizing: border-box;
 }
+h1 {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 59.4px;
+}
+h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px;
+    margin-bottom: 15px;
+}
+h3 {
+    color: #C0C0C0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+p {
+    color: #C0C0C0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
 header {
     background-color: #181818;
     padding: 24px 0;
@@ -32,7 +71,7 @@ header nav li:last-of-type {
 }
 header nav li a {
     color: #FFF;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -55,48 +94,12 @@ main section .container {
     text-align: center;
     margin: inherit;
 }
+
 main section div h3{
     text-align: left;
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
 }
 main section div p{
     text-align: left;
-}
-main section h3 {
-    color: #C0C0C0;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-main section h1 {
-    color: #FFF;
-    font-family: Poppins;
-    text-align: center;
-    font-size: 54px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 59.4px;
-}
-main section p {
-    color: #C0C0C0;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
 }
 
 .main_banner {
@@ -107,6 +110,7 @@ main section p {
     align-items: end;
     justify-content: center;
     padding-bottom: 71px;
+    position: relative;
 }
 .japan_banner {
     background-image: url("../img/japan-background.jpg");
@@ -115,10 +119,11 @@ main section p {
     align-items:center;
     display: flex;
     justify-content: right;
+    position: relative;
 }
 .japan_banner .container {
-    max-width: 300px;
-    padding-right: 60px;
+    max-width: 298px;
+    margin-right: 60px;
 }
 .costa-rica_banner {
     background-image: url(../img/costa-rica-background.jpg);
@@ -127,11 +132,12 @@ main section p {
     display: flex;
     justify-content: right;
     align-items:center;
+    position: relative;
 
 }
 .costa-rica_banner .container {
-    max-width: 300px;
-    padding-right: 60px;
+    max-width: 273px;
+    margin-right: 60px;
 }
 .nepal_banner {
     background-image: url(../img/nepal-background.jpg);
@@ -140,11 +146,25 @@ main section p {
     display: flex;
     justify-content: right;
     align-items:center;
-
+    position: relative;
 }
 .nepal_banner .container {
-    max-width: 300px;
-    padding-right: 60px;
+    max-width: 254px;
+    margin-right: 60px;
+}
+.past-clients div .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 46px;
+    max-width: 1168px;
+}
+.past-clients div h3 {
+    font-size: 24px;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 42px;
+    text-transform:unset;
 }
 .past-clients {
     background-color:#000 ;
@@ -153,30 +173,40 @@ main section p {
     padding: 120px 0 100px;
     margin: auto;
 }
-.past-clients div h2 {
-    color: #FFF;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 42px;
-    margin-bottom: 15px;
-}
-.past-clients div h3 {
-    color: #C0C0C0;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-    margin-bottom: 42px;
-}
-.past-clients div .container {
+.icons {
+    position: absolute;
+    right: 40px;
+    bottom: 41px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 46px;
-    max-width: 1168px;
+}
+.icons li {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    margin-left: 16px;
+    list-style: none;
+}
+.icons li:before {
+    display: inline-block;
+    content: "";
+    background-image: url("../img/time-icon.svg");
+    height: 16px;
+    width: 16px;
+    margin: 0 6px -7px 0;
+}
+.icons li:nth-child(2)::before {
+    background-image: url("../img/f-icon.svg");
+}
+.icons li:nth-child(3)::before {
+    background-image: url("../img/iso-icon.svg");
+    width: 32px;
+    margin-right:7px;
+}
+.icons li:last-of-type::before {
+    background-image: url("../img/loc-icon.svg");
+    width: 10px;
+    margin-right: 5px;
 }
