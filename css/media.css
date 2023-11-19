@@ -1,0 +1,36 @@
+@media screen and (max-width:879px) {
+    header nav li {
+        margin-left: 10px; 
+     }
+    
+     }
+     header nav li a {
+        font-size: 12px;
+    }
+
+@media screen and (max-width:767px) {
+    header nav {
+        display: none;
+    }
+    header .container  {
+    justify-content: center;
+     }
+    .main_banner .container {
+        padding: 0 15px;
+    }
+    .d-flex article div p {
+        width: 85vw;
+    }
+    .d-flex article img {
+        width: 100vw;
+    }
+    .sweden_banner::after {
+        bottom: 0;
+        background-size:inherit;
+        background-repeat: no-repeat;
+    }
+    .sweden_banner {
+    height: 1080px;
+    }
+}
+/* 320px 360px 375px 390px 393px 414px 428px 430px 768px 800px 820px 834px 992px 1024px  */
